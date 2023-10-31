@@ -4,7 +4,7 @@
 
 	<mapper namespace="com.projectbook.web.mapper.MemberMapper">
 		
-		<select id="bookList" resultType="Book" resultMap="bookResultMap">
+		<select id="getMember" resultType="Member">
 			SELECT
 				*
 			FROM member
