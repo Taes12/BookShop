@@ -92,6 +92,8 @@ local.properties
 *.rar
 #pom.properties 파일은 안올림림
 pom.properties
+#mf파일 안올리기
+*.MF
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
