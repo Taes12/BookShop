@@ -6,8 +6,9 @@ import com.projectbook.web.domain.Book;
 
 public interface BookService {
 	
+	// 메인 페이지(책 리스트)
 	public abstract List<Book> bookList();
-	
-	public abstract Book getBook(int no);
+	// 상세보기
+	public abstract Book bookDetail(int no);
 	
 }

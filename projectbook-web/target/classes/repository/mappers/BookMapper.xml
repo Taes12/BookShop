@@ -11,6 +11,13 @@
 			ORDER BY no DESC
 		</select>
 		
+		<select id="bookDetail" resultType="Book" resultMap="bookResultMap">
+			SELECT 
+				* 
+			FROM book
+			WHERE no = #{no}
+		</select>
+		
 		<resultMap id="bookResultMap" type="Book">
 			<id property="no" column="no"/>
 			<result property="title" column="title"/>

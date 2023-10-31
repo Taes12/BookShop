@@ -6,12 +6,11 @@ import com.projectbook.web.domain.Book;
 
 public interface BookDao {
 	
-	// 책 리스트 가져오기
+	// 메인 페이지(책 리스트)
 	public abstract List<Book> bookList();
 	
 	// 책 상세보기
-	public abstract Book getBook(int no);
-	
+	public abstract Book bookDetail(int no);
 	// 책 등록
 	
 	// 책 수정

@@ -20,7 +20,7 @@ public class BookController {
 	public void serBookService(BookService bookService) {
 		this.bookService = bookService;
 	}
-	
+	// 메인 페이지(책 리스트)
 	@RequestMapping(value= {"/bookList", "/list"}, method=RequestMethod.GET)
 	public String bookList(Model model) {
 	
@@ -30,4 +30,14 @@ public class BookController {
 	
 	return "bookList";
 	}
+	
+	// 책 상세보기
+	@RequestMapping("/bookDetail")
+	public String bookDetail(Model model, int no) {
+		Book book = bookService.bookDetail(no);
+		model.addAttribute("book", book);
+		
+		return "bookDetail";
+	}	
+	
 }

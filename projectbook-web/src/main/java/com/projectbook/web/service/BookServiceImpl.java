@@ -17,16 +17,15 @@ public class BookServiceImpl implements BookService {
 	public void setBookDao(BookDao bookDao) {
 		this.bookDao = bookDao;
 	}
-	
+	// 메인 페이지(책 리스트)
 	@Override
 	public List<Book> bookList() {
 		return bookDao.bookList();
 	}
-
+	// 상세보기
 	@Override
-	public Book getBook(int no) {
-		// TODO Auto-generated method stub
-		return null;
+	public Book bookDetail(int no) {
+		return bookDao.bookDetail(no);
 	}
 
 }
