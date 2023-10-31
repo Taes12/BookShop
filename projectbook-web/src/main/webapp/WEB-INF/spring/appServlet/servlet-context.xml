@@ -29,5 +29,6 @@
 	<redirect-view-controller path="/index" redirect-url="/bookList"/>
 	<redirect-view-controller path="/default" redirect-url="boardList"/>
 	<redirect-view-controller path ="/write" redirect-url="write"/>
-	
+	<!-- 로그인 폼에대한 뷰 전용 컨트롤러 -->
+	<view-controller path="loginForm" view-name="loginForm"/>
 </beans:beans>
