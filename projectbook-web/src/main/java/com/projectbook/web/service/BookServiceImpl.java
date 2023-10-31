@@ -27,5 +27,9 @@ public class BookServiceImpl implements BookService {
 	public Book bookDetail(int no) {
 		return bookDao.bookDetail(no);
 	}
-
+	// 책 추가(등록하기)
+	@Override
+	public void insertBook(Book book) {
+		bookDao.insertBook(book);
+	}
 }

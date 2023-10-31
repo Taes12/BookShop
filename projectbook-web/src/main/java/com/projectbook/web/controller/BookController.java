@@ -40,4 +40,11 @@ public class BookController {
 		return "bookDetail";
 	}	
 	
+	@RequestMapping(value="/bookWriteAction", method=RequestMethod.POST)
+	public String insertBook(Book book) {
+		bookService.insertBook(book);
+		return "redirect:bookList";
+		
+	}
+	
 }

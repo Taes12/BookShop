@@ -11,4 +11,6 @@ public interface BookService {
 	// 상세보기
 	public abstract Book bookDetail(int no);
 	
+	// 책 추가(등록)
+	public abstract void insertBook(Book book);
 }

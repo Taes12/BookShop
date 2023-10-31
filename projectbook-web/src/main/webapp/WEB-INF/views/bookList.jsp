@@ -6,7 +6,13 @@
 	<div>
 		<div>
 			<div>
-				<table class="table">
+								
+				<div class="row mt-3">
+					<div class="col text-end">
+						<a href="bookWrite" class="btn btn-outline-dark">책 등록하기</a>
+					</div>
+				</div>
+				<table class="table mt-5">
 					<thead>
 						<tr>
 							<th>NO</th>
