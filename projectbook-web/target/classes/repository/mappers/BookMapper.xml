@@ -18,6 +18,11 @@
 			WHERE no = #{no}
 		</select>
 		
+		<insert id="insertBook" parameterType="Book" useGeneratedKeys="true" keyProperty="no">
+			INSERT INTO book(title, author, publisher, publication_date, description, price, discount)
+			VALUES(#{title}, #{author}, #{publisher}, SYSDATE(), #{description}, #{price}, #{discount})
+		</insert>
+		
 		<resultMap id="bookResultMap" type="Book">
 			<id property="no" column="no"/>
 			<result property="title" column="title"/>

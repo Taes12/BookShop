@@ -12,7 +12,7 @@ public interface BookDao {
 	// 책 상세보기
 	public abstract Book bookDetail(int no);
 	// 책 등록
-	
+	public abstract void insertBook(Book book);
 	// 책 수정
 	
 	// 책 삭제

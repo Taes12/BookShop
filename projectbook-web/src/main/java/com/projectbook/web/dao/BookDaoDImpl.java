@@ -25,10 +25,17 @@ public class BookDaoDImpl implements BookDao {
 	public List<Book> bookList() {
 		return sqlSession.selectList(NAME_SPACE+".bookList");
 	}
+	
 	// 책 상세보기
 	@Override
 	public Book bookDetail(int no) {
 		return sqlSession.selectOne(NAME_SPACE+".bookDetail", no);
 	}
-
+	
+	// 책 추가(등록)
+	@Override
+	public void insertBook(Book book) {
+		sqlSession.insert(NAME_SPACE + ".insertBook", book);
+	}
+	
 }
