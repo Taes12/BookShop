@@ -29,7 +29,7 @@
 	<redirect-view-controller path="/index" redirect-url="/bookList"/>
 	<redirect-view-controller path="/default" redirect-url="bookList"/>
 	
-	<!-- 책 추가(등록)하기  -->
+	<!-- 책 추가(등록)하기 뷰  -->
 	<view-controller path="bookWrite" view-name="bookWrite"/>
 	<!-- 로그인 폼에대한 뷰 전용 컨트롤러 -->
 	<view-controller path="loginForm" view-name="loginForm"/>
