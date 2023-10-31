@@ -20,14 +20,15 @@ public class BookDaoDImpl implements BookDao {
 		this.sqlSession = sqlSession;
 	}
 	
+	// 메인 페이지(책 리스트)
 	@Override
 	public List<Book> bookList() {
 		return sqlSession.selectList(NAME_SPACE+".bookList");
 	}
-
+	// 책 상세보기
 	@Override
-	public Book getBook(int no) {
-		return null;
+	public Book bookDetail(int no) {
+		return sqlSession.selectOne(NAME_SPACE+".bookDetail", no);
 	}
 
 }
